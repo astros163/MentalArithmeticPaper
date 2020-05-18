@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/MentalArithmeticPaper">
+        <file>Resources/Config0.png</file>
+        <file>Resources/Minus0.png</file>
+        <file>Resources/Play0.png</file>
+        <file>Resources/Plus0.png</file>
+        <file>Resources/Power0.png</file>
+        <file>Resources/Reset0.png</file>
+        <file>Resources/Check0.png</file>
+        <file>Resources/No0.png</file>
+        <file>Resources/Down0.png</file>
+        <file>Resources/Up0.png</file>
+        <file>Resources/Disorder.png</file>
+        <file>Resources/Printer0.png</file>
+        <file>Resources/PageSetup.png</file>
+        <file>Resources/PrintPreview.png</file>
+        <file>Resources/Refresh0.png</file>
+        <file>Resources/PDF.png</file>
+    </qresource>
+</RCC>

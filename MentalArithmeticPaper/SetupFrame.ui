@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SetupSectionWindow</class>
+ <widget class="QMainWindow" name="SetupSectionWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>514</width>
+    <height>412</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>楷体</family>
+    <pointsize>16</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>题目区域设置</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QListWidget" name="lstQuestion"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>48</width>
+     <height>48</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAdd"/>
+   <addaction name="actionDelete"/>
+   <addaction name="separator"/>
+   <addaction name="actionMoveUp"/>
+   <addaction name="actionMoveDown"/>
+   <addaction name="actionDisorder"/>
+   <addaction name="separator"/>
+   <addaction name="actionClear"/>
+   <addaction name="separator"/>
+   <addaction name="actionYes"/>
+   <addaction name="actionCancel"/>
+  </widget>
+  <action name="actionAdd">
+   <property name="icon">
+    <iconset resource="MentalArithmeticPaper.qrc">
+     <normaloff>:/MentalArithmeticPaper/Resources/Plus0.png</normaloff>:/MentalArithmeticPaper/Resources/Plus0.png</iconset>
+   </property>
+   <property name="text">
+    <string>添加</string>
+   </property>
+   <property name="toolTip">
+    <string>添加题目</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="icon">
+    <iconset resource="MentalArithmeticPaper.qrc">
+     <normaloff>:/MentalArithmeticPaper/Resources/Minus0.png</normaloff>:/MentalArithmeticPaper/Resources/Minus0.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+   <property name="toolTip">
+    <string>删除题目</string>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="icon">
+    <iconset resource="MentalArithmeticPaper.qrc">
+     <normaloff>:/MentalArithmeticPaper/Resources/Reset0.png</normaloff>:/MentalArithmeticPaper/Resources/Reset0.png</iconset>
+   </property>
+   <property name="text">
+    <string>清除</string>
+   </property>
+   <property name="toolTip">
+    <string>清除所有题目</string>
+   </property>
+  </action>
+  <action name="actionYes">
+   <property name="icon">
+    <iconset resource="MentalArithmeticPaper.qrc">
+     <normaloff>:/MentalArithmeticPaper/Resources/Check0.png</normaloff>:/MentalArithmeticPaper/Resources/Check0.png</iconset>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+   <property name="toolTip">
+    <string>确定题目区域设置并退出</string>
+   </property>
+  </action>
+  <action name="actionCancel">
+   <property name="icon">
+    <iconset resource="MentalArithmeticPaper.qrc">
+     <normaloff>:/MentalArithmeticPaper/Resources/No0.png</normaloff>:/MentalArithmeticPaper/Resources/No0.png</iconset>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+   <property name="toolTip">
+    <string>取消题目区域设置并退出</string>
+   </property>
+  </action>
+  <action name="actionMoveUp">
+   <property name="icon">
+    <iconset resource="MentalArithmeticPaper.qrc">
+     <normaloff>:/MentalArithmeticPaper/Resources/Up0.png</normaloff>:/MentalArithmeticPaper/Resources/Up0.png</iconset>
+   </property>
+   <property name="text">
+    <string>向上移动</string>
+   </property>
+   <property name="toolTip">
+    <string>将题目向前移动</string>
+   </property>
+  </action>
+  <action name="actionMoveDown">
+   <property name="icon">
+    <iconset resource="MentalArithmeticPaper.qrc">
+     <normaloff>:/MentalArithmeticPaper/Resources/Down0.png</normaloff>:/MentalArithmeticPaper/Resources/Down0.png</iconset>
+   </property>
+   <property name="text">
+    <string>向下移动</string>
+   </property>
+   <property name="toolTip">
+    <string>将题目向后移动</string>
+   </property>
+  </action>
+  <action name="actionDisorder">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="MentalArithmeticPaper.qrc">
+     <normaloff>:/MentalArithmeticPaper/Resources/Disorder.png</normaloff>:/MentalArithmeticPaper/Resources/Disorder.png</iconset>
+   </property>
+   <property name="text">
+    <string>乱序</string>
+   </property>
+   <property name="toolTip">
+    <string>打乱题目顺序</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="MentalArithmeticPaper.qrc"/>
+ </resources>
+ <connections/>
+</ui>

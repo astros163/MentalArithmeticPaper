@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MentalArithmeticPaperMain</class>
+ <widget class="QMainWindow" name="MentalArithmeticPaperMain">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1050</width>
+    <height>869</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>楷体</family>
+    <pointsize>16</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>口算题目生成</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTextEdit" name="edtPaper"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="iconSize">
+    <size>
+     <width>48</width>
+     <height>48</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSetup"/>
+   <addaction name="separator"/>
+   <addaction name="actionGenerate"/>
+   <addaction name="actionRefresh"/>
+   <addaction name="separator"/>
+   <addaction name="actionPageSetup"/>
+   <addaction name="actionPrintPreview"/>
+   <addaction name="actionPrint"/>
+   <addaction name="actionPDF"/>
+   <addaction name="separator"/>
+   <addaction name="actionExit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionSetup">
+   <property name="icon">
+    <iconset resource="MentalArithmeticPaper.qrc">
+     <normaloff>:/MentalArithmeticPaper/Resources/Config0.png</normaloff>:/MentalArithmeticPaper/Resources/Config0.png</iconset>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+   <property name="toolTip">
+    <string>设置题目组成</string>
+   </property>
+  </action>
+  <action name="actionGenerate">
+   <property name="icon">
+    <iconset resource="MentalArithmeticPaper.qrc">
+     <normaloff>:/MentalArithmeticPaper/Resources/Play0.png</normaloff>:/MentalArithmeticPaper/Resources/Play0.png</iconset>
+   </property>
+   <property name="text">
+    <string>生成</string>
+   </property>
+   <property name="toolTip">
+    <string>生成试卷</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="MentalArithmeticPaper.qrc">
+     <normaloff>:/MentalArithmeticPaper/Resources/Power0.png</normaloff>:/MentalArithmeticPaper/Resources/Power0.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出程序</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="icon">
+    <iconset resource="MentalArithmeticPaper.qrc">
+     <normaloff>:/MentalArithmeticPaper/Resources/Printer0.png</normaloff>:/MentalArithmeticPaper/Resources/Printer0.png</iconset>
+   </property>
+   <property name="text">
+    <string>打印</string>
+   </property>
+   <property name="toolTip">
+    <string>打印试卷</string>
+   </property>
+  </action>
+  <action name="actionPrintPreview">
+   <property name="icon">
+    <iconset resource="MentalArithmeticPaper.qrc">
+     <normaloff>:/MentalArithmeticPaper/Resources/PrintPreview.png</normaloff>:/MentalArithmeticPaper/Resources/PrintPreview.png</iconset>
+   </property>
+   <property name="text">
+    <string>预览</string>
+   </property>
+   <property name="toolTip">
+    <string>预览打印效果</string>
+   </property>
+  </action>
+  <action name="actionPageSetup">
+   <property name="icon">
+    <iconset resource="MentalArithmeticPaper.qrc">
+     <normaloff>:/MentalArithmeticPaper/Resources/PageSetup.png</normaloff>:/MentalArithmeticPaper/Resources/PageSetup.png</iconset>
+   </property>
+   <property name="text">
+    <string>纸张</string>
+   </property>
+   <property name="toolTip">
+    <string>设置打印页面</string>
+   </property>
+  </action>
+  <action name="actionRefresh">
+   <property name="icon">
+    <iconset resource="MentalArithmeticPaper.qrc">
+     <normaloff>:/MentalArithmeticPaper/Resources/Refresh0.png</normaloff>:/MentalArithmeticPaper/Resources/Refresh0.png</iconset>
+   </property>
+   <property name="text">
+    <string>刷新</string>
+   </property>
+   <property name="toolTip">
+    <string>重新绘制试卷</string>
+   </property>
+  </action>
+  <action name="actionPDF">
+   <property name="icon">
+    <iconset resource="MentalArithmeticPaper.qrc">
+     <normaloff>:/MentalArithmeticPaper/Resources/PDF.png</normaloff>:/MentalArithmeticPaper/Resources/PDF.png</iconset>
+   </property>
+   <property name="text">
+    <string>PDF</string>
+   </property>
+   <property name="toolTip">
+    <string>将试卷打印成PDF文件</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="MentalArithmeticPaper.qrc"/>
+ </resources>
+ <connections/>
+</ui>
